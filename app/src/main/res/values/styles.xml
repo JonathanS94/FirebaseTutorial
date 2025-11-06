@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--Base application theme -->
+    <style name="AppTheme">
+        <item name="android:colorPrimary">@color/teal_700</item>
+    </style>
+
+    <style name="SlashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/splashscreen</item>
+    </style>
+</resources>
