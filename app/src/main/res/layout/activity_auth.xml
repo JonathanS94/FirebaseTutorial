@@ -7,8 +7,8 @@
     android:orientation="vertical">
 
     <LinearLayout
-        android:layout_width="368dp"
-        android:layout_height="224dp"
+        android:layout_width="327dp"
+        android:layout_height="239dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
@@ -47,7 +47,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/signUPbutton"
+                android:id="@+id/signUpButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
