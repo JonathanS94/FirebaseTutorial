@@ -1,5 +1,7 @@
 package com.example.firebasetutorial
 
+import android.content.Context
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
@@ -8,6 +10,7 @@ import com.google.firebase.auth.FirebaseAuth
 
 enum class ProviderType {
   BASIC,
+  GOOGLE,
 }
 
 class HomeActivity : AppCompatActivity() {
@@ -25,13 +28,25 @@ class HomeActivity : AppCompatActivity() {
     providerTextView = findViewById(R.id.providerTextView)
     logOutButton = findViewById(R.id.logOutButton)
 
-    // Obtenemos los datos del Intent
+    // Setup
     val bundle = intent.extras
     val email = bundle?.getString("email") ?: ""
     val provider = bundle?.getString("provider") ?: ""
 
     setup(email, provider)
+    //Guardado de datos
+    val prefs = getSharedPreferences(
+      getString(R.string.prefers_file),
+      Context.MODE_PRIVATE
+    )
+
+    prefs.edit()
+      .putString("email", email)
+      .putString("provider", provider)
+      .apply()
   }
+
+
 
   private fun setup(email: String, provider: String) {
     title = "Inicio"
@@ -40,8 +55,21 @@ class HomeActivity : AppCompatActivity() {
     providerTextView.text = provider
 
     logOutButton.setOnClickListener {
+      //Borrar datos
+      val prefs = getSharedPreferences(
+        getString(R.string.prefers_file),
+        Context.MODE_PRIVATE
+      )
+
+      prefs.edit()
+        .putString("email", email)
+        .putString("provider", provider)
+        .apply()
+
       FirebaseAuth.getInstance().signOut()
       onBackPressedDispatcher.onBackPressed()
     }
   }
 }
+
+private fun SharedPreferences.putString(string: String, email: String) {}

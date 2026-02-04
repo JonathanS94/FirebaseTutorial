@@ -12,7 +12,20 @@
           "package_name": "com.example.firebasetutorial"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "210839249169-c46fi60kv6jjg3bf98ub3oaanjf0lj2m.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.firebasetutorial",
+            "certificate_hash": "8dfec769e00163ca60d462aa7ac153136e4595d9"
+          }
+        },
+        {
+          "client_id": "210839249169-ncg2b2d266odi637j0caggmelkr5f56j.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyCxco8o-jFUjjnAuuGkM5iDnBIjwrQRwdY"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "210839249169-ncg2b2d266odi637j0caggmelkr5f56j.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

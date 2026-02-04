@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">Firebase Tutorial</string>
-    <string name="title_activity_home">HomeActivity</string>
+    <string name="prefers_file">com.example.firebasetutorial.PREFERENCES_FILE_KEY</string>
+    <string name="default_web_client_id">8D:FE:C7:69:E0:01:63:CA:60:D4:62:AA:7A:C1:53:13:6E:45:95:D9</string>
 </resources>

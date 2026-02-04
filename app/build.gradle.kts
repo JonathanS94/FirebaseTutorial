@@ -59,6 +59,8 @@ dependencies {
   implementation("com.google.firebase:firebase-analytics")
   //Agregar firebase auth
   implementation("com.google.firebase:firebase-auth-ktx:22.1.1")
+  //Agregar firebase firestore
+  implementation("com.google.android.gms:play-services-auth:21.0.0")
   implementation(libs.androidx.constraintlayout)
   implementation(libs.androidx.appcompat)
   implementation(libs.material)
